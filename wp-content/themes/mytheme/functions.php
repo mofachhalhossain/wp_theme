@@ -23,8 +23,7 @@ add_action('after_setup_theme', 'theme_setup');
 
 
 
-function script_enque(){
-    wp_enqueue_style('main-style', get_stylesheet_uri(), array(), time() );
+function wpdocs_theme_name_scripts() {
+	wp_enqueue_style( 'main-style', get_stylesheet_uri(), array(), time() );
 }
-
-add_action('wp_enqueue_scripts', 'script_enque');
+add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
