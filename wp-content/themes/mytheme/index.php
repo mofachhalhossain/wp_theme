@@ -11,6 +11,8 @@
                 </div>
                 <div class="main-content">
                     <?php echo get_the_date(); ?>
+                    <?php echo get_the_category_list(' '); ?>
+                    <?php echo get_the_tag_list(); ?>
                     <h2><?php the_title(); ?></h2>
                     <?php the_excerpt(); ?>
 
